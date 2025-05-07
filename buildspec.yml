@@ -17,8 +17,8 @@ phases:
       - echo Pushing the Docker image...
       - docker push 217865333136.dkr.ecr.us-east-1.amazonaws.com/tutorial_fargate:latest
       - echo Writing Image Definitions file...
-      - printf '[{"name":"Container-app-python","imageUri":"994617978174.dkr.ecr.us-east-2.amazonaws.com/python_app:latest"}]' > imagedefinitions.json
-      - printf '{"ImageURI":"994617978174.dkr.ecr.us-east-2.amazonaws.com/python_app:latest"}' > imageDetail.json
+      - printf '[{"name":"tutorial_fargate","imageUri":"217865333136.dkr.ecr.us-east-1.amazonaws.com/tutorial_fargate:latest"}]' > imagedefinitions.json
+      - printf '{"ImageURI":"217865333136.dkr.ecr.us-east-1.amazonaws.com/tutorial_fargate:latest"}' > imageDetail.json
       - cat imagedefinitions.json 
 artifacts:
   files:
