@@ -7,7 +7,7 @@
           "Properties": {
             "TaskDefinition": "<TASK_DEFINITION>",
             "LoadBalancerInfo": {
-              "ContainerName": "Container-app-python",
+              "ContainerName": "TutorialFargate-app-container",
               "ContainerPort": 5000
             }
           }
